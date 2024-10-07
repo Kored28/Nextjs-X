@@ -8,11 +8,11 @@ interface ModalProps{
     isOpen: boolean,
     onClose: () => void;
     onSubmit: () => void;
-    title: string;
-    body: React.ReactElement;
+    title?: string;
+    body?: React.ReactElement;
     footer?: React.ReactElement | null;
     actionLabel: string;
-    disabled: boolean,
+    disabled?: boolean,
 }
 
 const Modal: React.FC<ModalProps> = ({

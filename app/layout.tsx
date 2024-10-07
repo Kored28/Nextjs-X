@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/sidebar/Sidebar";
 import FollowBar from "@/components/followbar/FollowBar";
-import Modal from "@/components/modals/Modal";
 import LoginModal from "@/components/modals/LoginModal";
 import RegisterModal from "@/components/modals/RegisterModal";
 import { Toaster } from "react-hot-toast";
@@ -31,7 +30,6 @@ export default function RootLayout({
           <RegisterModal />
           <LoginModal />
           <EditModal />
-          <Modal />
           <div className="h-screen bg-black">
             <div className="container h-full pl-5 max-w-6xl">
               <div className="grid grid-cols-4 h-full">
